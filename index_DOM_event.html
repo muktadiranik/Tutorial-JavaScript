@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutorial JavaScript DOM Event</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index_DOM_event.css" />
+  </head>
+  <body style="height: 150vh">
+    <h1>Tutorial JavaScript DOM Event</h1>
+    <!-- drag events -->
+    <h4>Drag Events</h4>
+    <div id="drag_event_div">this is a drag event div</div>
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        id="drag_event_textarea"
+        rows="2"
+      ></textarea>
+      <p id="drag_event_paragraph" draggable="true">
+        this is a drag event paragraph
+      </p>
+    </div>
+
+    <hr />
+    <!-- clipboard events -->
+
+    <h4>Clipboard Events</h4>
+    <div id="clipboard_event_div">this is a clipboard event div</div>
+    <p id="clipboard_event_paragraph">this is a clipboard event paragraph</p>
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        id="clipboard_event_textarea"
+        rows="2"
+      ></textarea>
+    </div>
+
+    <hr />
+    <!-- focus events -->
+    <h4>Focus Events</h4>
+    <div id="focus_event_div">this is a focus event div</div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="focus_event_input"
+        id="focus_event_input"
+        aria-describedby="helpId"
+        placeholder=""
+      />
+    </div>
+
+    <hr />
+    <!-- keyboard events -->
+    <h4>Keyboard Events</h4>
+    <div id="keyboard_event_div">this is a keyboard event div</div>
+    <div class="form-group">
+      <label for=""></label>
+      <textarea
+        id="keyboard_event_textarea"
+        class="form-control"
+        rows="2"
+      ></textarea>
+    </div>
+
+    <hr />
+    <!-- mouse events -->
+    <h4>Mouse Events</h4>
+    <div id="mouse_event_div">this is a mouse event div</div>
+    <p id="mouse_event_paragraph">this is a mouse event paragraph</p>
+    <p id="mouse_event_paragraph_mousemove">this is a paragraph</p>
+    <button
+      type="button"
+      class="btn btn-outline-primary btn-sm"
+      name="mouse_event_button_group"
+    >
+      1
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary btn-sm"
+      name="mouse_event_button_group"
+    >
+      2
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary btn-sm"
+      name="mouse_event_button_group"
+    >
+      3
+    </button>
+
+    <hr />
+    <details>
+      <summary>summary</summary>
+      <p>this is a summary</p>
+    </details>
+    <hr />
+    <!-- media events -->
+    <h4>Media Events</h4>
+    <video width="400" controls loop muted>
+      <source
+        src="videos\Afreen Afreen, Rahat Fateh Ali Khan & Momina Mustehsan, Episode 2, Coke Studio Season 9.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <p id="video_paragraph">this is a paragraph</p>
+
+    <hr />
+    <!-- submit -->
+    <h4>Submit</h4>
+    <form action="" class="form-control" id="form_submit">
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          name="form_input"
+          id="form_input_1"
+          aria-describedby="helpId"
+          placeholder="Form Input 1"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          name="form_input"
+          id="form_input_2"
+          aria-describedby="helpId"
+          placeholder="Form Input 2"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-outline-primary">Submit</button>
+      <p id="form_paragraph">this is a paragraph</p>
+    </form>
+    <hr />
+
+    <!-- checkbox -->
+    <h4>Checkbox</h4>
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="1"
+      id="checkbox_1"
+      name="checkbox_input"
+    />
+    <label class="form-check-label" for="checkbox_1"> checkbox 1 </label>
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="2"
+      id="checkbox_2"
+      name="checkbox_input"
+    />
+    <label class="form-check-label" for="checkbox_2"> checkbox 2 </label>
+    <button type="button" class="btn btn-outline-primary" id="checkbox_button">
+      Checkbox
+    </button>
+
+    <p id="checkbox_input_paragraph">this is a paragraph</p>
+
+    <select class="form-select" name="select_input">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <p id="select_input_paragraph">this is a paragraph</p>
+    <hr />
+    <input
+      id="input_1"
+      type="text"
+      class="form-control"
+      placeholder="Input 1"
+    />
+    <p id="input_1_paragraph">this is a paragraph</p>
+    <input
+      id="input_2"
+      type="text"
+      class="form-control"
+      placeholder="Input 2"
+      name="input_2"
+    />
+    <p id="input_2_paragraph">this is a paragraph</p>
+
+    <hr />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Tutorial DOM Event -->
+    <script src="47_DOM_event.js"></script>
+  </body>
+</html>

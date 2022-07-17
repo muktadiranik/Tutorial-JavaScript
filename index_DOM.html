@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutorial JavaScript DOM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index_DOM.css" />
+  </head>
+
+  <body>
+    <h1>Tutorial JavaScript DOM</h1>
+    <hr />
+
+    <p
+      class="select_HTML_elements_paragraph"
+      id="select_HTML_elements_paragraph"
+    >
+      this is a paragraph
+    </p>
+
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="change_paragraph_by_getElementById()"
+    >
+      getElementById
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="change_paragraph_by_getElementsByTagName()"
+    >
+      getElementsByTagName
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="change_paragraph_by_getElementsByClassName()"
+    >
+      getElementsByClassName
+    </button>
+    <hr />
+    <!-- querySelector -->
+    <h4>querySelector</h4>
+    <div>
+      <p class="querySelector_paragraph" id="querySelector_paragraph">
+        this is a paragraph
+      </p>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="querySelector_TagName()"
+    >
+      querySelector_tagname
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="querySelector_ClassName()"
+    >
+      querySelector_ClassName
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="querySelector_Id()"
+    >
+      querySelector_Id
+    </button>
+    <hr />
+    <!-- button onclick -->
+    <h4>Button onclick</h4>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="change_image()"
+    >
+      onclick
+    </button>
+
+    <img
+      src="images\70_000_ Best Sunset Pictures · 100.jpeg"
+      alt=""
+      width="200"
+      id="img"
+    />
+    <hr />
+
+    <!-- find, create, add, remove html elements -->
+    <h4>Find, Create, Add, Remove HTML elements</h4>
+    <div id="find_create_add_remove_div" class="find_create_add_remove_div">
+      <p class="find_create_add_remove_div_p">this is a paragraph</p>
+      <p class="find_create_add_remove_div_p">this is a paragraph</p>
+      <p class="find_create_add_remove_div_p">this is a paragraph</p>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="change_html_element()"
+    >
+      Button
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="unchange_html_element()"
+    >
+      Button
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="create_element()"
+    >
+      createElement
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="remove_element()"
+    >
+      removeChild
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="create_element_insertBefore()"
+    >
+      insertBefore
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="add_to_ClassList()"
+    >
+      add_to_ClassList
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="remove_from_ClassList()"
+    >
+      remove_from_ClassList
+    </button>
+    <hr />
+
+    <!-- traversing DOM -->
+    <h4>Traversing DOM</h4>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      onclick="traverse_DOM()"
+    >
+      traverse DOM
+    </button>
+
+    <ul class="traversing_DOM_list">
+      <li id="traversing_DOM_list_li">list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <div class="traversing_DOM_div"></div>
+    <hr />
+    <!-- event listener -->
+    <h4>Event Listener</h4>
+    <h2>Event Listener</h2>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      id="event_listener_button"
+    >
+      Button 1
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      id="event_listener_button"
+    >
+      Button 2
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      id="event_listener_button"
+    >
+      Button 3
+    </button>
+    <hr />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Tutorial DOM -->
+
+    <script src="38_find_create_add_remove_html_element.js"></script>
+    <script src="37_onclick.js"></script>
+    <script src="36_query_selector.js"></script>
+    <script src="35_select_HTML_element.js"></script>
+  </body>
+</html>

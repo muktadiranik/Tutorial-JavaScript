@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "esm": "^3.2.25",
+    "jquery": "^3.6.0",
+    "jsdom": "^20.0.0",
+    "node-fetch": "^3.2.6",
+    "prompt-sync": "^4.2.0",
+    "typescript": "^4.7.4"
+  },
+  "type": "module"
+}
